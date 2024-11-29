@@ -4,6 +4,112 @@
   padding: 2rem;
   text-align: center;
 }
- .input-message {
-  width: 40%;
- }
+
+.main-container{
+  width: 100%;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border-top: solid 2px var(--aqua-color);
+  gap: 1rem;
+  align-items: center;
+}
+
+.input-message {
+  padding: 20px;
+  border: solid 1px var(--aqua-color);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+}
+
+.input-message:focus {
+  outline: none; /* Removes the default focus outline */
+  box-shadow: none; /* Removes any box shadow that may appear */
+}
+
+.search-button {
+  background-color: var(--aqua-color);
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border-top: solid 2px var(--purple-color);
+  gap: 1rem;
+  align-items: center;
+}
+
+.spaced-output, .continuous-output {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
+  background-color: white;
+  border: solid 1px var(--purple-color);
+  border-radius: 10px;
+  align-items: center;
+}
+
+.copy-icon {
+  color: var(--purple-color);
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .top-container, .bottom-container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .left-container, .right-container {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .input-message {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  h1 {
+    margin: 10px 0;
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  h2{
+    margin: 10px 0;
+    font-size: 1.8rem; /* Adjust font size for smaller screens */
+  }
+
+  .search-button {
+    padding: 10px; /* Adjust button padding */
+  }
+
+  .spaced-output, .continuous-output {
+    flex-direction: column; /* Stack items vertically */
+  }
+}

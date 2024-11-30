@@ -112,4 +112,11 @@
   .spaced-output, .continuous-output {
     flex-direction: column; /* Stack items vertically */
   }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+  }
 }

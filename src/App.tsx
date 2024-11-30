@@ -54,6 +54,9 @@ function App() {
           }
         </div>
       </div>
+      <footer className='copyright'>
+      <p>© 2024 <a href="https://yuliakapustinaweb.web.app/">YuliaWebDev</a> All rights reserved.</p>
+      </footer>
     </div>
   )
 }
